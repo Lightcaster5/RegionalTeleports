@@ -1,0 +1,49 @@
+############################################
+#                                          #
+# RegionalTeleports plugin by Lightcaster5 #
+#     For more information, contact me     #
+#      @ Lightcaster5#0001 on Discord      #
+#                                          #
+############################################
+
+wild-command:
+  # The permission required to use the /wild command
+  # Default: rt.wild
+  permission: 'rt.wild'
+  messages:
+    teleported: '&aFound a safe location for you to teleport to &8(&7{x}&8, &7{y}&8, &7{z}&8)'
+    no-permission: '&cYou do not have permission to use this command'
+
+teleport-regions:
+  region1:
+    permission: 'rt.region1'
+    bounds:
+      world: 'world'
+      min:
+        x: -100
+        z: -100
+      max:
+        x: 100
+        z: 100
+  region2:
+    permission: 'rt.region2'
+    bounds:
+      world: 'world'
+      min:
+        x: -100
+        z: -100
+      max:
+        x: 100
+        z: 100
+
+world-guard:
+  # Whether to use WorldGuard regions
+  # Default: true
+  enabled: true
+  # Whether to blacklist all WorldGuard regions, if true, blacklisted-regions will be ignored
+  # Default: true
+  blacklist-all: true
+  # WorldGuard regions that players can't teleport to
+  # Default: [ 'spawn' ]
+  blacklisted-regions:
+    - 'spawn'

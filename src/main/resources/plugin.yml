@@ -1,0 +1,7 @@
+name: RegionalTeleports
+main: dev.jonahm.regionalteleports.RegionalTeleports
+version: 1.0
+author: Lightcaster5
+website: https://jonahm.dev
+api-version: 1.19
+softdepend: [ 'WorldGuard' ]
